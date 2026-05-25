@@ -52,30 +52,30 @@ Use `--dataset` with one of:
 - `imdb`
 - `names`
 
-## Default CLI (SlaClip-MNIST)
+## Default CLI (SlaClip-Cifar10)
 ```
-python SlaClip/run_exp.py \
-  --method slaclip \
-  --dataset mnist \
-  --seed 42 \
-  --epochs 30 \
-  --K 20 \
-  --C0 1 \
-  --c-min 0.1 \
-  --c-max 50 \
-  --eta 0.5 \
-  --sigma 1.0 \
-  --delta 1e-5 \
-  --grad-sample-mode hooks \
-  --batch-size 512 \
-  --batch-size-test 1024 \
-  --optim SGD \
-  --lr 0.1 \
-  --momentum 0.9 \
-  --weight-decay 5e-4 \
-  --lr-schedule cos \
-  --workers 8 \
-  --run-name slaclip_sd42_K20-mnist
+
+python SlaClip/run_exp.py
+--method slaclip
+--dataset cifar10
+--seed 42
+--epochs 111
+--K 50   --C0 5
+--c-min 0.2
+--c-max 50
+--eta 0.2
+--sigma 1.538
+--delta 1e-5
+--grad-sample-mode hooks
+--batch-size 2048
+--batch-size-test 2048
+--optim SGD
+--lr 0.2
+--momentum 0.9
+--weight-decay 5e-4
+--lr-schedule cos
+--workers 8
+--run-name slaclip_cifar10_eps8_sd42_B2048_C5_lr0.2_cos_K50_sigma1.5
 
 ```
 
