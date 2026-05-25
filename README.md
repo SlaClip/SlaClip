@@ -60,7 +60,8 @@ python SlaClip/run_exp.py
 --dataset cifar10
 --seed 42
 --epochs 111
---K 50   --C0 5
+--K 50
+--C0 5
 --c-min 0.2
 --c-max 50
 --eta 0.2
