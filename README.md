@@ -55,28 +55,28 @@ Use `--dataset` with one of:
 ## Default CLI (SlaClip-Cifar10)
 ```
 
-python SlaClip/run_exp.py
---method slaclip
---dataset cifar10
---seed 42
---epochs 111
---K 50
---C0 5
---c-min 0.2
---c-max 50
---eta 0.2
---sigma 1.538
---delta 1e-5
---grad-sample-mode hooks
---batch-size 2048
---batch-size-test 2048
---optim SGD
---lr 0.2
---momentum 0.9
---weight-decay 5e-4
---lr-schedule cos
---workers 8
---run-name slaclip_cifar10_eps8_sd42_B2048_C5_lr0.2_cos_K50_sigma1.5
+python SlaClip/run_exp.py \
+  --method slaclip \
+  --dataset cifar10 \
+  --seed 42 \
+  --epochs 120 \
+  --K 50 \
+  --C0 5 \
+  --c-min 0.2 \
+  --c-max 50 \
+  --eta 0.2 \
+  --sigma 1.538 \
+  --delta 1e-5 \
+  --grad-sample-mode hooks \
+  --batch-size 2048 \
+  --batch-size-test 2048 \
+  --optim SGD \
+  --lr 0.2 \
+  --momentum 0.9 \
+  --weight-decay 5e-4 \
+  --lr-schedule cos \
+  --workers 8 \
+  --run-name slaclip_cifar10_eps8_sd42_B2048_C5_lr0.2_cos_K50_sigma1.538
 
 ```
 
