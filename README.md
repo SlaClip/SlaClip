@@ -1,6 +1,12 @@
 # SlaClip
 
-This folder is a self-contained overlay for the official Opacus repository. It adds SlaClip and paper baselines without modifying upstream files. Remove `SlaClip/` to restore upstream behavior. 
+Official code for the ICML 2026 paper **“SlaClip: Gradient Norm Slacks can be Indicator for Adaptive Clipping in DP-SGD.”**
+
+- **ICML Poster:** https://icml.cc/virtual/2026/poster/66390
+- **Paper:** TBA
+- **Code:** https://github.com/<your-github-username>/SlaClip
+
+This repository is a self-contained overlay for the official [Opacus](https://github.com/pytorch/opacus) repository. It adds SlaClip and paper baselines without modifying upstream files. Remove `SlaClip/` to restore upstream behavior.
 
 ## Quick start
 1. `git clone` the official Opacus repo, then copy this `SlaClip/` folder into the repo root. Run all commands from the opacus repo root (see Requirements).
