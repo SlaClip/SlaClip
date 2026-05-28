@@ -62,27 +62,25 @@ Use `--dataset` with one of:
 ```
 
 python SlaClip/run_exp.py \
-  --method slaclip \
   --dataset cifar10 \
+  --method slaclip \
   --seed 42 \
-  --epochs 120 \
-  --K 50 \
-  --C0 5 \
-  --c-min 0.2 \
-  --c-max 50 \
-  --eta 0.2 \
-  --sigma 1.538 \
-  --delta 1e-5 \
-  --grad-sample-mode hooks \
+  --epochs 90 \
   --batch-size 2048 \
-  --batch-size-test 2048 \
+  --batch-size-test 1024 \
   --optim SGD \
-  --lr 0.2 \
   --momentum 0.9 \
   --weight-decay 5e-4 \
+  --grad-sample-mode hooks \
+  --delta 1e-5 \
+  --lr 0.1 \
   --lr-schedule cos \
-  --workers 8 \
-  --run-name slaclip_cifar10_eps8_sd42_B2048_C5_lr0.2_cos_K50_sigma1.538
+  --C0 5 \
+  --sigma 1.415787 \
+  --target-epsilon 8 \
+  --K 50 \
+  --eta 0.2 \
+  --run-name cifar10_slaclip_sd42_bs2048_lr0.1_schedcos_C05_K50_eps8_sigma1.4157 \
 
 ```
 
